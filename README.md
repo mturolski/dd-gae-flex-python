@@ -1,6 +1,6 @@
 # Datadog on Google App Engine Flexible
 
-A sample Flask app demonstrating how to run the Datadog Agent on Google App Engine Flexible environment, with APM tracing, log collection, trace-log correlation, and App & API Protection (AppSec).
+A sample Flask app demonstrating how to run the Datadog Agent on Google App Engine Flexible environment, with APM tracing, log collection, trace-log correlation, and App & API Protection (AppSec). Please note this is not an offical guide and is intended only for testing purposes.
 
 ## Features
 
@@ -33,7 +33,7 @@ A sample Flask app demonstrating how to run the Datadog Agent on Google App Engi
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/mturolski/dd-gae-flex-python.git
 cd YOUR_REPO_NAME
 ```
 
