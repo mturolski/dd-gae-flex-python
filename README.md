@@ -25,7 +25,12 @@ A sample Flask app demonstrating how to run the Datadog Agent on Google App Engi
 ├── entrypoint.sh         # Container startup script
 ├── logs.yaml             # Datadog logs agent configuration
 ├── main.py               # Flask application
-└── requirements.txt      # Python dependencies
+├── requirements.txt      # Python dependencies
+├── static/
+│   ├── script.js         # Frontend JavaScript
+│   └── styles.css        # Frontend styles
+└── templates/
+    └── index.html        # HTML template
 ```
 
 ## Setup
