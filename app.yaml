@@ -1,0 +1,30 @@
+runtime: custom
+env: flex
+service: flex-service
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+
+env_variables:
+  DD_API_KEY: "Your API key here"
+  DD_SITE: "datadoghq.com"
+  DD_APPSEC_ENABLED: "true"
+  DD_IAST_ENABLED: "true"
+  DD_APPSEC_SCA_ENABLED: "true"
+  DD_RUNTIME_SECURITY_CONFIG_ENABLED: "true"
+  DD_SBOM_CONTAINER_IMAGE_ENABLED: "true"
+  DD_SBOM_HOST_ENABLED: "true"
+  DD_ENV: "dev"
+  DD_SERVICE: "flex-service"
+  DD_LOGS_INJECTION: "true"
+  DD_LOGS_ENABLED: "true"
+  DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL: "true"
+  DD_APM_ENABLED: "true"
+  DD_APM_NON_LOCAL_TRAFFIC: "true"
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /.*
+  script: auto
